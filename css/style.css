@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar{
+    padding: 15px 0px 12px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    background-color: chocolate;
+    width: 100%;
+    transition: .3s linear;
+    z-index: 999;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: lowercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: chocolate;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.nav-item{
+    display: block;
+    transition: 0.5s;
+}
+#nav:hover .nav-item{
+    filter: blur(5px);
+}
+
+#nav:hover .nav-item:hover{
+    filter: blur(0px);
+}
+
+header .navbar li {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+
+header .navbar li:hover {
+    color: chocolate;
+}
+
+.navsticky{
+    background: #fff;
+    position: fixed;
+    padding: 8px 0px 8px 0px;
+}
+
+.body{
+    background-color: chocolate;
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.body span{
+    background: #fff;
+    padding: 5px;
+    font-size: 41px;
+}
+
+.body h1{
+    font-weight: 300;
+    font-size: 66px;
+    color: #fff;
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #0e1629;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    transition: .2s linear;
+    border-radius: 3px;
+}
+
+.btn-white:hover{
+    background: rgb(245, 104, 4);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0px 14px 24px -13px rgb(0, 0, 0, .14);
+}
+
+
+/* About Section */
+
+.discover{
+    text-align: center;
+    padding: 30px;
+}
+
+.discover img{
+    max-width: 80%;
+    height: auto;
+    animation: blob 20s linear infinite; /* Border animation */
+}
+
+
+@keyframes blob{
+    0%{
+        border-radius: 31% 69% 60% 40% / 37% 35% 65% 63% ;
+    }
+    20%{
+        border-radius: 52% 48% 46% 54% / 55% 42% 58% 45% ;
+    }
+    40%{
+        border-radius: 70% 30% 61% 39% / 34% 56% 44% 66% ;
+    }
+    60%{
+        border-radius: 41% 59% 33% 67% / 58% 42% 58% 42% ;
+    }
+    80%{
+        border-radius: 61% 39% 54% 46% / 39% 52% 48% 61% ;
+    }
+    95%{
+        border-radius: 46% 54% 57% 43% / 65% 41% 59% 35% ;
+    }
+    100%{
+        border-radius: 31% 69% 60% 40% / 37% 35% 65% 63% ;
+    }
+}
+
+.divider{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid chocolate;
+    margin: 40px;
+}
+
+
+.topdishes{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    width: 300px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid chocolate;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+button:hover{
+    width: 200px;
+}
+button:hover{
+    border: none;
+}
+
+
+.details-btn {
+    background: chocolate;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.details-btn:hover {
+    background: #fc0148;
+}
+
+
+.card{
+    text-decoration: none;
+    margin: 20px;
+    color: #0e1629;
+    transition: .3s linear;
+}
+
+.card:hover{
+    color: chocolate;
+}
+
+.card-dishes{
+    max-width: 1260px;
+}
+
+.card img{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+
+.app{
+    color: floralwhite;
+    background-color: chocolate;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.app h2{
+    font-size: 70px;
+    padding: 10px;
+}
+
+.app p{
+    padding: 10px;
+    max-width: 500px;
+    columns: #dadada;
+}
+
+.appImg{
+    height: 500px;
+}
+
+.downloadImg{
+    height: 105px;
+    cursor: pointer;
+}
+
+.subscribe{
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.subscribe button{
+        background-color:chocolate ;
+}
+
+.newsletterForm{
+    width: 100%;
+}
+
+.footer{
+    background-color: chocolate;
+}
+
+
+.footer *{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+}
+
+.menu {
+    padding: 15px 0px 12px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px 40px;
+}
+
+.heading {
+    background: chocolate;
+    color: white;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+
+.heading-title {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.heading-subtitle {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.food-items {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: .2s ease-in-out;
+}
+
+.food-items img {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+.food-items:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.details {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.details-subtitle {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details-subtitle>h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price-food {
+    text-align: right;
+}
+
+.details>p {
+    color: #6f6f6f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+
+.details-btn {
+    background: rgba(232, 67, 67, 0.85);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.details-btn:hover {
+    background: #fc0101;
+}
